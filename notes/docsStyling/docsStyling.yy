@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"docsStyling",
+  "name":"docsStyling",
+  "parent":{
+    "name":"Documentation",
+    "path":"folders/GMDocs/Documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

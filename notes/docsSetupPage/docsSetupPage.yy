@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"docsSetupPage",
+  "name":"docsSetupPage",
+  "parent":{
+    "name":"Documentation",
+    "path":"folders/GMDocs/Documentation.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

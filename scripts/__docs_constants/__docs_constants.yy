@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__docs_constants",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__docs_constants",
+  "parent":{
+    "name":"Main",
+    "path":"folders/GMDocs/System/Main.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

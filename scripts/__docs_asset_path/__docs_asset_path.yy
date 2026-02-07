@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__docs_asset_path",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__docs_asset_path",
+  "parent":{
+    "name":"Misc",
+    "path":"folders/GMDocs/System/Misc.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

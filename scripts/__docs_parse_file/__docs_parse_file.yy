@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__docs_parse_file",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__docs_parse_file",
+  "parent":{
+    "name":"Parsing",
+    "path":"folders/GMDocs/System/Parsing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

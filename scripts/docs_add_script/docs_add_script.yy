@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"docs_add_script",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"docs_add_script",
+  "parent":{
+    "name":"API",
+    "path":"folders/GMDocs/API.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
