@@ -1,10 +1,10 @@
-function docs_add_script(_name) {
+function docs_add_script(_name_or_asset) {
 	if (!__docs_init.generating) return;
-	var _filename = __docs_asset_path(DOCS_ASSET_TYPE.script, _name);
+	var _filename = __docs_asset_path(DOCS_ASSET_TYPE.script, _name_or_asset);
 	
 	// File doesn't exist
 	if (!file_exists(_filename)) {
-		return __docs_logger.error($"Failed to add script '{_name}'.");
+		return __docs_logger.error($"Failed to add script '{_name_or_asset}'.");
 	}
 	
 	// Add script to docs instance
