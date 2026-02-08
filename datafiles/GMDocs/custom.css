@@ -1,0 +1,15 @@
+body {
+	background-color: #282828;
+	color: white;
+}
+.sidenav {
+	background-color: #4b4a4a;
+}
+
+:any-link {
+	color: #04de7d;
+}
+
+input[type=text] {
+	color: white;
+}
