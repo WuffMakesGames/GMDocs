@@ -1,3 +1,6 @@
+/// Parses and adds a script to the current group.
+/// Scripts with multiple functions will be split into several items.
+/// @arg {string,Asset.GMScript,Asset.GMConstructor} name The script or its name as seen in the IDE.
 function docs_add_script(_name_or_asset) {
 	if (!__docs_init.generating) return;
 	var _filename = __docs_asset_path(DOCS_ASSET_TYPE.script, _name_or_asset);
@@ -9,6 +12,6 @@ function docs_add_script(_name_or_asset) {
 	
 	// Add script to docs instance
 	var _instance = __docs_get_instance();
-	_instance.add_item(_instance.category, _instance.group, __docs_parse_script(_filename));
+	_instance.add(__docs_parse_script(_filename));
 	__docs_logger.log("Added script:", _filename);
 }

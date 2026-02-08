@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__DocsInfo",
+  "%Name":"__docs_write_file",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__DocsInfo",
+  "name":"__docs_write_file",
   "parent":{
-    "name":"Classes",
-    "path":"folders/GMDocs/System/Classes.yy",
+    "name":"Misc",
+    "path":"folders/GMDocs/System/Misc.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

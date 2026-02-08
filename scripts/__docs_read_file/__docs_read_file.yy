@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"docs_category",
+  "%Name":"__docs_read_file",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"docs_category",
+  "name":"__docs_read_file",
   "parent":{
-    "name":"API",
-    "path":"folders/GMDocs/API.yy",
+    "name":"Misc",
+    "path":"folders/GMDocs/System/Misc.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

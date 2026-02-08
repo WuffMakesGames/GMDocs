@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"__DocsInfo",
+  "%Name":"docs_end_group",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"__DocsInfo",
+  "name":"docs_end_group",
   "parent":{
-    "name":"Classes",
-    "path":"folders/GMDocs/System/Classes.yy",
+    "name":"API",
+    "path":"folders/GMDocs/API.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
