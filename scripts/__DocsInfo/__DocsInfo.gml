@@ -1,3 +1,4 @@
+/// Generates a struct containing all the documentation items and information.
 function __DocsInfo() constructor {
 	style = [];
 	
@@ -13,11 +14,15 @@ function __DocsInfo() constructor {
 	root = new __DocsGroup(noone, "");
 	current_group = root;
 	
-	// Methods
+	// Methods =====================================
+	
+	/// Begins a new group.
+	/// @arg {string} name
 	static begin_group = function(_name) {
 		current_group = new __DocsGroup(current_group, _name);
 	}
 	
+	/// Finalizes the current group.
 	static end_group = function() {
 		var _previous = current_group;
 		
@@ -29,6 +34,8 @@ function __DocsInfo() constructor {
 		add(_previous);
 	}
 	
+	/// Adds a DocsItem to the current group.
+	/// @arg {Struct.__DocsItem} item
 	static add = function(_item) {
 		array_push(current_group.items, _item);
 	}

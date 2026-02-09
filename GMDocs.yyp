@@ -53,6 +53,7 @@
     {"id":{"name":"__docs_init","path":"scripts/__docs_init/__docs_init.yy",},},
     {"id":{"name":"__docs_logger","path":"scripts/__docs_logger/__docs_logger.yy",},},
     {"id":{"name":"__docs_parse_file","path":"scripts/__docs_parse_file/__docs_parse_file.yy",},},
+    {"id":{"name":"__docs_parse_jsdocs","path":"scripts/__docs_parse_jsdocs/__docs_parse_jsdocs.yy",},},
     {"id":{"name":"__docs_parse_note","path":"scripts/__docs_parse_note/__docs_parse_note.yy",},},
     {"id":{"name":"__docs_parse_script","path":"scripts/__docs_parse_script/__docs_parse_script.yy",},},
     {"id":{"name":"__docs_read_file","path":"scripts/__docs_read_file/__docs_read_file.yy",},},

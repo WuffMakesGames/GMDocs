@@ -18,6 +18,7 @@
     {"name":"__docs_get_instance","order":2,"path":"scripts/__docs_get_instance/__docs_get_instance.yy",},
     {"name":"__docs_init","order":1,"path":"scripts/__docs_init/__docs_init.yy",},
     {"name":"__docs_parse_file","order":2,"path":"scripts/__docs_parse_file/__docs_parse_file.yy",},
+    {"name":"__docs_parse_jsdocs","order":3,"path":"scripts/__docs_parse_jsdocs/__docs_parse_jsdocs.yy",},
     {"name":"__docs_parse_note","order":1,"path":"scripts/__docs_parse_note/__docs_parse_note.yy",},
     {"name":"__docs_read_file","order":3,"path":"scripts/__docs_read_file/__docs_read_file.yy",},
     {"name":"__docs_write_file","order":4,"path":"scripts/__docs_write_file/__docs_write_file.yy",},

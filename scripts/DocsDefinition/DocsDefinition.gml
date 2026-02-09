@@ -1,6 +1,10 @@
 // Your documentation goes here
 // ==========================================================
 
+docs_add_script(__DocsInfo);
+docs_add_script(__docs_logger);
+return;
+
 // System =======================================
 docs_set_homepage("docsHomepage");
 
