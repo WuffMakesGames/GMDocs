@@ -2,6 +2,7 @@
 /// @return {Array<Struct.__DocsItem>}
 function  __docs_parse_script(_filename) {
 	var _text = __docs_read_file(_filename);
+	var _whitespace = [" ", "\t", "\n", "\v", "\f", "\r"];
 	var _functions = []; // [ [name, pos], ... ]
 	var _output = [];
 	
@@ -52,6 +53,8 @@ function  __docs_parse_script(_filename) {
 		// Check for name after function, or search for a method definition
 		_name = string_trim(string_copy(_text, _pos_end, string_pos_ext("(", _text, _pos) - _pos_end));
 		if (_name == "") {
+			// TODO: Get name from methods
+			// var name = function();
 			show_debug_message("method: " + _name);
 			
 		} else {
