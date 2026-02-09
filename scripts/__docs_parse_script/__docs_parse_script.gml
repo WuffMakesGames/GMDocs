@@ -17,7 +17,8 @@ function  __docs_parse_script(_filename, _name) {
 	var _search_size = string_length(_search);
 	
 	var _pos = string_pos_ext(_search, _text, 0);
-	var _name = "";
+	var _func_name = "";
+	var _func_type = "function";
 	
 	var _skip, _trimcheck, _char;
 	var _checkpos, _checkpos_end;
@@ -57,11 +58,13 @@ function  __docs_parse_script(_filename, _name) {
 			continue;
 		}
 		
-		// Check for name after function, or search for a method definition
-		_name = string_trim(string_copy(_text, _pos_end, string_pos_ext("(", _text, _pos) - _pos_end));
-		if (_name == "") {
-			// TODO: Get name from methods
-			// var name =function();
+		// Check for name after function
+		_func_name = string_trim(string_copy(_text, _pos_end, string_pos_ext("(", _text, _pos) - _pos_end));
+		_func_type = "function";
+		
+		// Search for a method definition
+		if (_func_name == "") {
+			_func_type = "method";
 			
 			// Find "=" and skip whitespace
 			_char = " ";
@@ -80,16 +83,17 @@ function  __docs_parse_script(_filename, _name) {
 				_checkpos -= 1;
 			}
 			
-			_name = string_trim(string_copy(_text, _checkpos, _checkpos_end - _checkpos));
-			__docs_logger.log("method:", _name);
-			
-		} else {
-			__docs_logger.log("global:", _name);
+			// Get name
+			_func_name = string_trim(string_copy(_text, _checkpos, _checkpos_end - _checkpos));
 		}
 		
 		// Add function to list
-		if (_name != "") {
-			array_push(_functions, [_name, _pos]);
+		if (_func_name != "") {
+			array_push(_functions, {
+				name: _func_name,
+				type: _func_type,
+				origin: _pos,
+			});
 		}
 		
 		// Next
@@ -97,12 +101,38 @@ function  __docs_parse_script(_filename, _name) {
 	}
 	
 	// Parse all functions
+	var _current_item = undefined;
+	var _current_function;
+	var _current_method;
+	
 	for (var i = 0; i < array_length(_functions); i++) {
+		_current_function = _functions[i];
+		_current_method = undefined;
+		
+		switch (_current_function.type) {
+			case "function": {
+				if (_current_item != undefined) array_push(_output, _current_item);
+				_current_item = new __DocsItem(_current_function.name, _current_function.origin);
+				
+				break;
+			}
+			case "method": {
+				_
+				break;
+			}
+		}
 		
 		// Get JSDOCS
 		
 		// Get arguments
 		
+	}
+	
+	// No functions found, use old script definition
+	if (array_length(_output) == 0) {
+		_current_item = new __DocsItem(_name, 0);
+		_current_item.jsdocs = __docs_parse_jsdocs(_text);
+		array_push(_output, _current_item);
 	}
 	
 	return _output;
