@@ -21,6 +21,7 @@
     {"name":"__docs_parse_jsdocs","order":3,"path":"scripts/__docs_parse_jsdocs/__docs_parse_jsdocs.yy",},
     {"name":"__docs_parse_note","order":1,"path":"scripts/__docs_parse_note/__docs_parse_note.yy",},
     {"name":"__docs_read_file","order":3,"path":"scripts/__docs_read_file/__docs_read_file.yy",},
+    {"name":"__docs_script_parser_test","order":4,"path":"scripts/__docs_script_parser_test/__docs_script_parser_test.yy",},
     {"name":"__docs_write_file","order":4,"path":"scripts/__docs_write_file/__docs_write_file.yy",},
     {"name":"__DocsGroup","order":1,"path":"scripts/__DocsGroup/__DocsGroup.yy",},
     {"name":"__DocsItem","order":2,"path":"scripts/__DocsItem/__DocsItem.yy",},

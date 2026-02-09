@@ -3,6 +3,7 @@
 
 docs_add_script(__DocsInfo);
 docs_add_script(__docs_logger);
+docs_add_script(__docs_script_parser_test);
 return;
 
 // System =======================================

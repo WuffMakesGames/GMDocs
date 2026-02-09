@@ -1,13 +1,16 @@
 /// Returns an array of DocsItems from a script.
 /// @arg {string} filename The filepath to the script
+/// @arg {string} name The name of the script
 /// @return {Array<Struct.__DocsItem>}
-function  __docs_parse_script(_filename) {
+function  __docs_parse_script(_filename, _name) {
+	show_debug_message("");
+	
+	// Variables
 	var _text = __docs_read_file(_filename);
-	var _whitespace = [" ", "\t", "\n", "\v", "\f", "\r"];
 	var _functions = []; // [ [name, pos], ... ]
 	var _output = [];
 	
-	show_debug_message("");
+	var _whitespace = [" ", "\t", "\n", "\v", "\f", "\r"];
 	
 	// Get functions from script
 	var _search = "function";

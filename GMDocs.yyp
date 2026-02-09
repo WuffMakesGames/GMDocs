@@ -57,6 +57,7 @@
     {"id":{"name":"__docs_parse_note","path":"scripts/__docs_parse_note/__docs_parse_note.yy",},},
     {"id":{"name":"__docs_parse_script","path":"scripts/__docs_parse_script/__docs_parse_script.yy",},},
     {"id":{"name":"__docs_read_file","path":"scripts/__docs_read_file/__docs_read_file.yy",},},
+    {"id":{"name":"__docs_script_parser_test","path":"scripts/__docs_script_parser_test/__docs_script_parser_test.yy",},},
     {"id":{"name":"__docs_write_file","path":"scripts/__docs_write_file/__docs_write_file.yy",},},
     {"id":{"name":"__DocsGroup","path":"scripts/__DocsGroup/__DocsGroup.yy",},},
     {"id":{"name":"__DocsInfo","path":"scripts/__DocsInfo/__DocsInfo.yy",},},
